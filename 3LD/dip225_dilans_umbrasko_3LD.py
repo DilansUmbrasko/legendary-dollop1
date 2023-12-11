@@ -32,10 +32,10 @@ for f in range(len(visi_faili)):
     row.append(cenaparkwh)
     data.append(row)
 
-for i, invoice_info in enumerate(data):
-    rekina_izm = invoice_info[0]
-    izmantota_energ = invoice_info[1]
-    nordpool_tarifs = invoice_info[2]
+for i in range(len(data)):
+    rekina_izm = data[i][0] 
+    izmantota_energ = data[i][1]
+    nordpool_tarifs = data[i][2]
 
     paradzemas_izm = izmantota_energ * nordpool_tarifs
 
